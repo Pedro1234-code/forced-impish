@@ -12,7 +12,7 @@ IMPISH=impish-base-amd64.tar.gz
 
 clear
 
-echo Downloading rootfs tarball (29mb)
+echo Downloading rootfs tarball 29mb
 
 sudo apt update
 
