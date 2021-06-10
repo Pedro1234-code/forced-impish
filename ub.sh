@@ -12,7 +12,7 @@ IMPISH=impish-base-amd64.tar.gz
 
 sudo apt update
 
-sudo apt install wget git curl -y
+sudo apt install wget git curl apt-utils -y
 
 sudo wget https://cdimage.ubuntu.com/ubuntu-base/daily/current/impish-base-amd64.tar.gz
 
