@@ -10,6 +10,10 @@ cd impish
 
 IMPISH=impish-base-amd64.tar.gz
 
+clear
+
+echo Downloading rootfs tarball (29mb)
+
 sudo apt update
 
 sudo apt install wget git curl apt-utils -y
