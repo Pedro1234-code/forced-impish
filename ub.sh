@@ -18,7 +18,7 @@ sudo apt update
 
 sudo apt install wget git curl apt-utils -y
 
-sudo wget https://cdimage.ubuntu.com/ubuntu-base/daily/current/impish-base-amd64.tar.gz
+sudo wget https://cdimage.ubuntu.com/ubuntu-base/daily/pending/impish-base-amd64.tar.gz
 
 sudo tar -xzf $IMPISH
 
