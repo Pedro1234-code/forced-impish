@@ -2,7 +2,7 @@
 
 echo Starting Ubuntu 21.10 Forced Update
 
-cd ~/
+cd /tmp
 
 sudo mkdir impish 
 
@@ -12,7 +12,7 @@ IMPISH=impish-base-amd64.tar.gz
 
 clear
 
-echo Downloading rootfs tarball 29mb
+echo Downloading necessary files
 
 sudo apt update
 
@@ -27,8 +27,6 @@ cd etc/apt
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
 sudo rm -rf /etc/apt/sources.list
-
-sudo rm -rf /etc/apt/sources.list.d/*
 
 sudo cp sources.list /etc/apt/
 
@@ -51,6 +49,10 @@ sudo rm -rf /var/lib/dpkg/info/postfix.postinst
 sudo apt upgrade -y
 
 sudo apt update
+
+echo Removing files for some space
+
+sudo rm /tmp/$IMPISH
 
 echo Finished. Rebooting the system.
 
