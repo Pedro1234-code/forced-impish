@@ -54,6 +54,8 @@ echo Removing files for some space
 
 sudo rm /tmp/$IMPISH
 
+sudo update-manager -d
+
 echo Finished. Rebooting the system.
 
 sudo reboot -f
